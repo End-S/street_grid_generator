@@ -1,0 +1,53 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+#Page {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+          "header header header header"
+          "controls controls controls controls"
+          ". map map ."
+          ". info info."
+          "footer footer footer footer";
+}
+
+#PageTitle {
+  grid-area: header;
+  text-align: center;
+}
+#StreetOutput {
+  grid-area: map;
+  margin: auto;
+  display: inline-block;
+  white-space: nowrap;
+  .gridRow {
+    margin: 0;
+    text-rendering: geometricPrecision;
+    line-height: 0.875rem;
+  }
+}
+
+#SelectedStreet {
+  grid-area: info;
+  text-align: center;
+}
+
+#MapControls{
+  grid-area: controls;
+  text-align: center;
+  input, label{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+  }
+  margin-bottom: 1rem;
+}
+
+

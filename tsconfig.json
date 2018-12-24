@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    // "allowSyntheticDefaultImports": true,
+    // "declaration": false,
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es7"
+    ],
+    // "module": "es2015",
+    // "moduleResolution": "node",
+    // "sourceMap": true,
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true
+  }
+}

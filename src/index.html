@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Street Generator</title>
+</head>
+<body>
+<div id="Page">
+    <div id="PageTitle">
+        <h1>Street Map Generator</h1>
+        <p>Choose your grid size and the amount of streets you wish to generate,
+            then click 'Generate'. Hover your cursor over a street to highlight it.</p>
+    </div>
+    <div id="MapControls">
+        <label for="sizeRange">Grid Size:</label>
+        <input type="range" id="SizeRange" name="sizeRange"
+               min="10" max="40" step="1">
+        <label id="SizeRangeLabel" for="sizeRange">10</label>
+        <span>|</span>
+        <label for="streetAmount">Number of streets:</label>
+        <input type="range" id="StreetAmount" name="streetAmount"
+               min="10" max="60" step="1">
+        <label id="StreetAmountLabel" for="streetAmount">10</label>
+        <button id="GenerateButton">Generate</button>
+    </div>
+    <div id="StreetOutput"></div>
+    <h3 id="SelectedStreet"></h3>
+</div>
+</body>
+</html>
